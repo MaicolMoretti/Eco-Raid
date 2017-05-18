@@ -1,6 +1,6 @@
 # Benvenuti nel file README del sito
 Il sito sarà del tipo di E-Commerce
-##Propositi
+## Propositi
 Il sito avrà il solo scopo didattico. Non dovrà essere pubblicato da nessuna parte, se non sotto previa accettazione e sottoscrizione da parte del direttore generale.
 ##Descrizione
 Il sito farà parte della categoria E-Commerce. Dovrà impegnarsi nell'avere una grafica semplice ma elegante, in modo tale che l'utente possa navigare tranquillo tra le varie pagine, senza dover perdere troppo tempo nella ricerca di una funzione.

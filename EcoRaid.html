@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" <head>
+<meta charset="UTF-8">
+<title> EcoRaid </title>
+<!-- richiamo le pagine .css per lo stile -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="stile.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+    <!-- NAVBAR (HEADER) -->
+    <nav class="navbar navbar-inverse navbar-fixed-top animated fadeInLeftBig">
+        <div class="container-fluid">
+            <!--container-fluid = il contenitore si estende per tutta la larghezza disponibile
+                container da solo = si ferma a 1200/1300 px di larghezza -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="EcoRaid.html">EcoRaid</a>
+            </div>
+
+            <!-- Collezziono link, form e altri contenuti in una finestra a discesa -->
+            <div class="collapse navbar-collapse" id="navbar-example">
+                <ul class="nav navbar-nav">
+                    <li class="active"> <a href="#"> Login <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Assistenza</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Informazioni <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+
+                            <!-- 
+                            <li><a href="#">.......Chi siamo......</a></li>-->
+                            <!-- messo sulla nav tabs-->
+                            <!-- <li><a href="#DatiPersonali">........Trattamento dati personali......</a></li>
+                            <li><a href="#">......Sede.......</a></li> -->
+
+                            <!-- messo sulla nav tabs-->
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">diritti del cliente</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">reso</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Cerca su EcoRaid">
+                    </div>
+                    <button type="submit" class="btn btn-default">Cerca</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Il mio account</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Carrello <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">carrello</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">i miei ordini</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+
+    <!-- CAROSELLO 1 -->
+
+    <div id="carousel-1" class="carousel slide animated bounceInUp" data-ride="carousel">
+        <!-- pallini in basso per scorrere le immagini (che ometto) -->
+        <!-- <ol class="carousel-indicators">
+                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+             </ol>
+        -->
+
+        <!-- cio' che devo mettere dentro il carosello -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item">
+                <img src="torcia.jpg" alt="...">
+                <div class="carousel-caption">
+                    <h2> Torcia led €29,90 </h2>
+                    <p> torcia a led con batterie multifunzione, strobo, spot, ambient </p>
+                </div>
+            </div>
+
+            <div class="item active">
+                <img src="sconti calzature.jpg" alt="...">
+                <div class="carousel-caption">
+                    <h2> </h2>
+                    <p> promozione non cumulabile </p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="arduino.jpg" alt="...">
+                <div class="carousel-caption">
+                    <h2> </h2>
+                    <p> </p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="Amsterdam.jpg" alt="...">
+                <div class="carousel-caption">
+                    <h2> PREPARA LE VALIGIE E VIAGGIA CON NOI! </h2>
+                    <p> aereo A/R Amsterdam a soli € 49,00 </p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="sconti EcoRaid.jpg" alt="...">
+                <div class="carousel-caption">
+                    <h2> </h2>
+                    <p> </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-1" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-1" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <!--COLONNE (con cui suddivido il testo) -->
+    <div class="row">
+        <div class="col-xs-10 animated bounceInUp">
+            <h1> BENVENUTO </h1>
+            <h4> Ti diamo il benvenuto su EcoRaid. Qui troverai tantissime offerte sui molti prodotti! Non ti resta che registrarti e iniziare a fare shopping! Accedi al tuo account personale per iniziare a fare acquisti in totale sicurezza e riservatezza.
+            </h4>
+        </div>
+    </div>
+
+
+    <!-- Bottone per fare il login-->
+    <a class="btn btn-primary animated bounceInUp" href="#" id="bottoneLogin" role="button">Login</a>
+
+
+    <hr>
+
+    <!-- MODAL -->
+    <!-- Button trigger modal..... posizionamento del bottone del modal -->
+    <button type="button" id="DatiPersonali" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">
+     TRATTAMENTO DATI PERSONALI
+    </button>
+
+    <!-- Modal vero e proprio (va bene anche se lo posiziono fuori da normale flosso HTML!
+         Il bottone si unisce al modal attravero il data-target="#myModal" che si collega con id="myModal" -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">TRATTAMENTO DEI DATI PERSONALI</h4>
+                </div>
+                <div class="modal-body">
+                    TRATTAMENTO DEI DATI PERSONALI (Privacy policy ai sensi dell’art. 13 del d.lgs. 196/2003) Ti informiamo che i dati che fornirai al gestore del presente sito al momento della tua compilazione della “form contatti” (o form o form iscrizione) disponibile
+                    sul sito stesso, saranno trattati nel rispetto delle disposizioni di cui al d.lgs. 196/2003, Codice in materia di protezione dei dati personali. La presente informativa riguarda i dati personali inviati dall’utente visitatore al momento
+                    della compilazione delle form. Ti informiamo del fatto che i dati che conferirai volontariamente tramite le form verranno tramutati in una email che eventualmente potrà essere conservata all’interno del sistema di ricezione di email
+                    utilizzato dal titolare del sito. Questi dati non verranno registrati su altri supporti o dispositivi, né verranno registrati altri dati derivanti dalla tua navigazione sul sito. 1. FINALITÀ DEL TRATTAMENTO DEI DATI PERSONALI Le finalità
+                    del trattamento dei tuoi dati sono le seguenti: – poterti ricontattare tramite i riferimenti da te lasciati nelle form per evadere eventuali tue richieste – consentirti l’accesso riconosciuto al blog o altre sezioni del sito – ricevere
+                    aggiornamenti e newsletter. Nessun altro uso potrà essere fatto dei tuoi dati se non da te espressamente autorizzato. 2. NATURA DEI DATI TRATTATI E MODALITÀ DEL TRATTAMENTO a. I dati personali trattati saranno esclusivamente i dati
+                    comuni strettamente necessari e pertinenti alle finalità di cui al punto 1 che precede. b. Il trattamento dei dati personali conferiti è realizzato per mezzo delle operazioni o del complesso delle operazioni indicate all’art. 4 comma
+                    1 lett. a) D. Lgs. 196/2003. c. Il trattamento è svolto direttamente dall’organizzazione del titolare. 3. NATURA DEL CONFERIMENTO E CONSEGUENZE DEL RIFIUTO Ricorda che non sei obbligato a conferire al gestore del sito i dati personali
+                    tramite richiesti nella form contatti. Il conferimento dei tuoi dati tramite la form contatti è facoltativo. Tuttavia il rifiuto al conferimento per le finalità di cui all’art. 1 determinerà l’impossibilità di contattare il gestore
+                    del sito web tramite la form contatti messo a disposizione sul sito. 4. TITOLARE DEL TRATTAMENTO I dati personali raccolti mediante la form contatti saranno inviati via email al gestore del presente sito web , che sarà titolare del
+                    trattamento. 5. DIRITTI DELL’INTERESSATO Ricorda che in ogni momento potrai esercitare i diritti a te attribuiti dall’art, 7 del d.lgs. 196/2003 che riportiamo qui di seguito, scrivendo al gestore del presente sito web tramite la form
+                    contatti. Art. 7. del d.lgs. 196/2003 Diritto di accesso ai dati personali ed altri diritti 1. L’interessato ha diritto di ottenere la conferma dell’esistenza o meno di dati personali che lo riguardano, anche se non ancora registrati,
+                    e la loro comunicazione in forma intelligibile. 2. L’interessato ha diritto di ottenere l’indicazione: a) dell’origine dei dati personali; b) delle finalità e modalità del trattamento; c) della logica applicata in caso di trattamento
+                    effettuato con l’ausilio di strumenti elettronici; d) degli estremi identificativi del titolare, dei responsabili e del rappresentante designato ai sensi dell’articolo 5, comma 2; e) dei soggetti o delle categorie di soggetti ai quali
+                    i dati personali possono essere comunicati o che possono venirne a conoscenza in qualità di rappresentante designato nel territorio dello Stato, di responsabili o incaricati. 3. L’interessato ha diritto di ottenere: a) l’aggiornamento,
+                    la rettificazione ovvero, quando vi ha interesse, l’integrazione dei dati; b) la cancellazione, la trasformazione in forma anonima o il blocco dei dati trattati in violazione di legge, compresi quelli di cui non è necessaria la conservazione
+                    in relazione agli scopi per i quali i dati sono stati raccolti o successivamente trattati; c) l’attestazione che le operazioni di cui alle lettere a) e b) sono state portate a conoscenza, anche per quanto riguarda il loro contenuto,
+                    di coloro ai quali i dati sono stati comunicati o diffusi, eccettuato il caso in cui tale adempimento si rivela impossibile o comporta un impiego di mezzi manifestamente sproporzionato rispetto al diritto tutelato. 4. L’interessato
+                    ha diritto di opporsi, in tutto o in parte: a) per motivi legittimi al trattamento dei dati personali che lo riguardano, oltre che pertinenti allo scopo della raccolta; b) al trattamento di dati personali che lo riguardano a fini di
+                    invio di materiale pubblicitario o di vendita diretta o per il compimento di ricerche di mercato o di comunicazione commerciale. 6. DURATA DEL TRATTAMENTO Il trattamento avrà una durata non superiore a quella necessaria alle finalità
+                    per le quali i dati sono stati raccolti.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" class="btn btn-primary">Chiudi</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FINE MODAL-->
+
+    <hr>
+
+
+
+    <div class="role">
+        <div class="col-xs-10">
+            <h1> OFFERTE DELLA SETTIMANA </h1>
+        </div>
+    </div>
+
+
+    <!-- CAROSELLO 2  -->
+
+    <div id="carousel-2" class="carousel slide" data-ride="carousel">
+        <!-- puntini indicatori -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-2" data-slide-to="1"></li>
+            <li data-target="#carousel-2" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper per slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="mouse.jpg" alt="...">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="bose.jpg" alt="...">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="nike.jpg" alt="...">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-2" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-2" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+
+    <hr>
+
+    <!-- NAV TABS -->
+    <div>
+
+        <!-- Nav tabs barra di navigazione dx sx -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Chi siamo</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Sede</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">messaggi</a></li>
+            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">impostazioni</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="home">
+                <h2> CHI SIAMO </h2>
+                <p> Buongiorno Mondo! Siamo 4 studenti dell'università di Camerino alle prese con la construzione di un sito di e-commerce per l'esame di programmazione web.</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="profile">
+                <h2> SEDE </h2>
+                <p> Non abbiamo una vera e propria sede! I luoghi in cui implementiamo le nostre idee sono svariati! Dal nostro salone di casa alle stanze dell'università di Camerino</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="messages">
+                <h2> MESSAGGI </h2>
+                <p> Qualora voleste inviarci dei messaggi scriveteci a NonRompere@leScatole.it e noi vi risponderemo entro 5 anni! Parola nostra!</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="settings">
+                <h2> IMPOSTAZIONI </h2>
+                <p> Perchè vorresti perdere tempo con le impostazioni quando puoi tranquillamente spendere i tuoi soldi in questo sito?</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js">
+    </script>
+
+    <script>
+        $('body').scrollspy({
+            target: '#navbar-example'
+        })
+    </script>
+
+
+</body>
+
+</html>

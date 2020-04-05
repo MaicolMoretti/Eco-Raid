@@ -17,3 +17,5 @@ Il sito si impegnerà a rispettare le seguenti user stories:
 * Come user voglio poter accedere ad un'area privata tramite username e password, per poter gestire il mio account
 * Come user voglio poter una email di riepilogo all'acquisto di un ordine
 * Come user voglio poter messaggiare con un admin tramite un'interfaccia in tempo reale, qualora ci fossero dei problemi o dubbi da risolvere
+
+Link al video Youtube: https://www.youtube.com/watch?v=NUCEqd_Db-c
